@@ -2,38 +2,41 @@
 type: slides
 ---
 
-# Introduction
+# Introduction to Machine Learning
 
-Notes: Text at the end of a slide prefixed like this will be displayed as
-speaker notes on the side. Slides can be separated with a divider: ---.
+Notes: These slides will give us an overview of machine learning
 
 ---
 
-# This is a slide
+# Goals
+
+- De-mystify AI
+- Practical understanding of how deep learning works
+- Ability to hack on code in the real world
+
+Notes:
+
+---
+
+<img src="chapter_1/ai_ml_dl.png" alt="AI is a superset of ML is a superset of DL" style="display:block;margin:auto" />
+
+Notes: AI is a superset of ML is a superset of DL
+
+---
+
+# Machine Learning 101
+
+This is what it's all about
 
 ```python
-# Print something
-print("Hello world")
+# Is the sentiment of this text positive or negative?
+deeplearning("I'm so happy")
 ```
 
 ```out
-Hello world
+"positive"
 ```
 
-- Slides can have code, bullet points, tables and pretty much all other Markdown
-  elements.
-- This is another bullet point.
-
-<img src="profile.jpg" alt="This image is in /static" width="25%">
-
-Notes: Some more notes go here
+Notes: We want to take some input, do some magic, and generate some output
 
 ---
-
-# Let's practice!
-
-Notes: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam tristique
-libero at est congue, sed vestibulum tortor laoreet. Aenean egestas massa non
-commodo consequat. Curabitur faucibus, sapien vitae euismod imperdiet, arcu erat
-semper urna, in accumsan sapien dui ac mi. Pellentesque felis lorem, semper nec
-velit nec, consectetur placerat enim.

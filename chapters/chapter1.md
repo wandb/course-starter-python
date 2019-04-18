@@ -1,8 +1,6 @@
 ---
-title: 'Chapter 1: Getting started'
-description:
-  'This chapter will teach you about many cool things and introduce you to the
-  most important concepts of the course.'
+title: 'Chapter 1: Introduction to Machine Learning'
+description: 'This chapter we will go over the basics of machine learning'
 prev: null
 next: /chapter2
 type: chapter
@@ -16,26 +14,26 @@ id: 1
 
 </exercise>
 
-<exercise id="2" title="Getting Started">
+<exercise id="2" title="Intro review">
 
-Let's ask some questions about the slides. Whats the correct answer?
+Let's review what we just went over. Which of the following statements is true?
 
 <choice>
-<opt text="Answer one">
+<opt text="Deep learning is the best kind of machine learning">
 
-This is not the correct answer.
-
-</opt>
-
-<opt text="Answer two" correct="true">
-
-Good job!
+Traditional machine learning approaches are often better than deep learning.
 
 </opt>
 
-<opt text="Answer three">
+<opt text="Deep learning is a type of machine learning" correct="true">
 
-This is not correct either.
+Bingo!
+
+</opt>
+
+<opt text="AGI will be acheived using only deep learning techniques.">
+
+This is highly unlikely
 
 </opt>
 </choice>
@@ -44,13 +42,9 @@ This is not correct either.
 
 <exercise id="3" title="First steps">
 
-This is a code exercise. The content can be formatted in simple Markdown – so
-you can have **bold text**, `code` or [links](https://spacy.io) or lists, like
-the one for the instructions below.
+Let's start with a simple coding exercise.
 
-- These are instructions and they can have bullet points.
-- The code block below will look for the files `exc_01_03`, `solution_01_03` and
-  `test_01_03` in `/exercises`.
+- First lets see what the shape of X is
 
 <codeblock id="01_03">
 

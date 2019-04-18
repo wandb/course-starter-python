@@ -5,7 +5,8 @@ def test():
     # in the meta.json for details.
 
     # If an assertion fails, the message will be displayed
-    assert "print(DATA[0])" in __solution__, "Are you printing the first record?"
-    assert some_var == len(DATA), "Are you getting the correct length?"
+    assert ".shape" in __solution__, "Did you call .shape on train_images?"
+    assert total_test_images == len(
+        test_images), "Are you getting the correct length?"
 
     __msg__.good("Well done!")

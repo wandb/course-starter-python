@@ -1,11 +1,12 @@
-import json
+import wandb
+import tensorflow as tf
+from tensorflow import keras
 
-# This code will run relative to the root of the repo, so we can load files
-with open("exercises/bookquotes.json") as f:
-    DATA = json.loads(f.read())
+(train_images, train_labels), (test_images,
+                               test_labels) = keras.datasets.mnist.load_data()
 
-# Print the first record in the DATA
-print(___[____])
+# What are the dimensions of train_images?
+print(train_images._____)
 
-# Assign the length of DATA to some_var
-some_var = ___
+# Assign the number of test images to a variable
+total_test_images = _____
