@@ -40,3 +40,5 @@ deeplearning("I'm so happy")
 Notes: We want to take some input, do some magic, and generate some output
 
 ---
+
+# Let's practice

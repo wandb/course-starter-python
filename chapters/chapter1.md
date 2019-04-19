@@ -44,7 +44,7 @@ This is highly unlikely
 
 Let's start with a simple coding exercise.
 
-- First lets see what the shape of X is
+- Modify the code below to address the comments
 
 <codeblock id="01_03">
 

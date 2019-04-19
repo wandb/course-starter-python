@@ -164,6 +164,19 @@ class Juniper extends React.Component {
         })
     }
 
+    requestWandbApiKey() {
+        const token = this.getCookie('id_token_2')
+        fetch('https://api.wandb.ai/graphql', {
+            method: 'POST',
+            headers: {
+                Authorization: 'Bearer ' + token,
+            },
+            body: JSON.stringify({ query: '{viewer{apiKeys{edges{node{name}}}}}' }),
+        })
+            .then(res => res.json())
+            .then(res => this.setState({ apiKey: res.data.viewer.apiKeys.edges[0].node.name }))
+    }
+
     /**
      * Get a kernel by requesting a binder or from localStorage / user settings
      * @returns {Promise}
@@ -262,6 +275,19 @@ class Juniper extends React.Component {
                     text: this.props.msgError,
                 })
             })
+    }
+
+    /**
+     * Retrieve a cookie
+     */
+    getCookie(cookiename) {
+        // Get a cookie with a specified name
+        // Get name followed by anything except a semicolon
+        var cookiestring = RegExp('' + cookiename + '[^;]+').exec(document.cookie)
+        // Return everything after the equal sign, or an empty string if the cookie name not found
+        return decodeURIComponent(
+            !!cookiestring ? cookiestring.toString().replace(/^[^=]+./, '') : ''
+        )
     }
 
     render() {
