@@ -53,3 +53,15 @@ This is a hint.
 </codeblock>
 
 </exercise>
+
+<exercise id="4" title="Advanced">
+
+Lets look at the data
+
+<codeblock id="01_04">
+
+This is a hint.
+
+</codeblock>
+
+</exercise>

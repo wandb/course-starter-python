@@ -7,6 +7,7 @@ def test():
     # If an assertion fails, the message will be displayed
     assert ".shape" in __solution__, "Did you call .shape on train_images?"
     assert total_test_images == len(
-        test_images), "Are you getting the correct length?"
+        test_images), "Are you getting the correct length? %s != %s" % (total_test_images, len(
+            test_images))
 
     __msg__.good("Well done!")
